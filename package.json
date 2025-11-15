@@ -1,6 +1,6 @@
 {
-  "name": "@yume/baileys",
-  "version": "1.0.0",
+  "name": "yume-baileys",
+  "version": "1.0.2",
   "description": "Yume Baileys - Develop your WhatsApp bot with this Baileys. Based on @ajammm/baileys",
   "keywords": [
     "baileys",

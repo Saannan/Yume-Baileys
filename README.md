@@ -1,25 +1,25 @@
-# @yume/baileys
+# yume-baileys
 
 A high-performance, modern TypeScript library for the WhatsApp Web API.
 Optimized for extreme speed, reliability, and modern features.
 
-[![npm version](https://img.shields.io/npm/v/@yume/baileys.svg?style=for-the-badge&logo=npm&color=CB3837)](https://www.npmjs.com/package/@yume/baileys)
-[![downloads](https://img.shields.io/npm/dm/@yume/baileys.svg?style=for-the-badge&logo=npm&color=CB3837)](https://www.npmjs.com/package/@yume/baileys)
-[![license](https://img.shields.io/npm/l/@yume/baileys.svg?style=for-the-badge&color=green)](LICENSE)
-[![node](https://img.shields.io/node/v/@yume/baileys.svg?style=for-the-badge&logo=node.js&color=339933)](https://nodejs.org)
+[![npm version](https://img.shields.io/npm/v/yume-baileys.svg?style=for-the-badge&logo=npm&color=CB3837)](https://www.npmjs.com/package/yume-baileys)
+[![downloads](https://img.shields.io/npm/dm/yume-baileys.svg?style=for-the-badge&logo=npm&color=CB3837)](https://www.npmjs.com/package/yume-baileys)
+[![license](https://img.shields.io/npm/l/yume-baileys.svg?style=for-the-badge&color=green)](LICENSE)
+[![node](https://img.shields.io/node/v/yume-baileys.svg?style=for-the-badge&logo=node.js&color=339933)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5+-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
 ---
 
-### 📜 About @yume/baileys
+### 📜 About yume-baileys
 
-**@yume/baileys** is an advanced fork of the original Baileys library, heavily optimized for maximum performance and stability. It is built with modern TypeScript and designed for production-ready applications.
+**yume-baileys** is an advanced fork of the original Baileys library, heavily optimized for maximum performance and stability. It is built with modern TypeScript and designed for production-ready applications.
 
 This library is **95% faster** than most other versions, supports full **multi-device** and **iOS** compatibility, and includes unique features like automatic **blue-check fake replies**.
 
 * **Based on:** `yupra/baileys & ajammm/baileys`
 * **Original by:** `WhiskeySockets/Baileys`
-* **Modified & Enhanced by:** `YumeNoTo (@yume/baileys)`
+* **Modified & Enhanced by:** `YumeNoTo (yume-baileys)`
 
 ---
 
@@ -53,13 +53,13 @@ This library is not affiliated with WhatsApp Inc. Use it responsibly. Avoid spam
 
 ```bash
 # 🚀 Install the latest version (Recommended)
-npm install @yume/baileys@latest
+npm install yume-baileys@latest
 
 # 🧶 Yarn
-yarn add @yume/baileys@latest
+yarn add yume-baileys@latest
 
 # 📦 PNPM
-pnpm add @yume/baileys@latest
+pnpm add yume-baileys@latest
 ```
 
 ---
@@ -67,17 +67,17 @@ pnpm add @yume/baileys@latest
 ### 📥 Import
 ```javascript
 // ES6 Module
-import makeWASocket from "@yume/baileys"
+import makeWASocket from "yume-baileys"
 
 // CommonJS (Node.js)
-const makeWASocket = require("@yume/baileys").default
+const makeWASocket = require("yume-baileys").default
 ```
 
 ---
 
 ### 🚀 Quick Start
 ```javascript
-const { makeWASocket, DisconnectReason, useMultiFileAuthState } = require("@yume/baileys")
+const { makeWASocket, DisconnectReason, useMultiFileAuthState } = require("yume-baileys")
 const { Boom } = require("@hapi/boom")
 const P = require("pino")
 
@@ -119,7 +119,7 @@ async function connectToWhatsApp() {
 
             if (text === "hi") {
                 await sock.sendMessage(m.key.remoteJid!, {
-                    text: "Hello! I am a bot powered by @yume/baileys"
+                    text: "Hello! I am a bot powered by yume-baileys"
                 })
             }
         }
@@ -136,7 +136,7 @@ connectToWhatsApp()
 
 ### 📚 Authentication
 ```javascript
-const { makeWASocket, useMultiFileAuthState } = require("@yume/baileys")
+const { makeWASocket, useMultiFileAuthState } = require("yume-baileys")
 
 async function connectWithPairingCode() {
     const { state, saveCreds } = await useMultiFileAuthState("auth_info")
@@ -274,5 +274,5 @@ await sock.sendMessage(jid, {
 This library is an enhanced fork and owes its functionality to the original creators.
  * Original: `WhiskeySockets/Baileys`
  * Base Fork: `yupra/baileys & ajammm/baileys`
- * Enhancements: `YumeNoTo (@yume/baileys)`
+ * Enhancements: `YumeNoTo (yume-baileys)`
 Licensed under the MIT License.
