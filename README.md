@@ -6,7 +6,6 @@ Optimized for extreme speed, reliability, and modern features.
 [![npm version](https://img.shields.io/npm/v/yume-baileys.svg?style=for-the-badge&logo=npm&color=CB3837)](https://www.npmjs.com/package/yume-baileys)
 [![downloads](https://img.shields.io/npm/dm/yume-baileys.svg?style=for-the-badge&logo=npm&color=CB3837)](https://www.npmjs.com/package/yume-baileys)
 [![license](https://img.shields.io/npm/l/yume-baileys.svg?style=for-the-badge&color=green)](LICENSE)
-[![node](https://img.shields.io/node/v/yume-baileys.svg?style=for-the-badge&logo=node.js&color=339933)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.5+-3178C6?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
 
 ---
